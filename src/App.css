@@ -1,0 +1,106 @@
+/* src/App.css */
+
+body, .main-container {
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.main-container {
+  max-width: 420px;
+  margin: 2em auto;
+  background: #fafbfc;
+  border-radius: 18px;
+  box-shadow: 0 2px 26px #0002;
+  padding: 2.5em 1.5em 1.5em 1.5em;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 1.2em;
+}
+
+input.password-input {
+  width: 100%;
+  font-size: 1.1em;
+  padding: 0.55em 1em;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  margin-bottom: 1.7em;
+  box-sizing: border-box;
+}
+
+.dial-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.3em;
+}
+
+.criteria-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  margin-bottom: 1.3em;
+}
+
+.criterion {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+}
+
+.criterion .bullet {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 0.75em;
+  display: inline-block;
+  box-shadow: 0 1px 3px #0001 inset;
+  border: 2px solid #fff;
+}
+
+.suggestions-box {
+  margin-top: 1.3em;
+  background: #fff;
+  border-radius: 9px;
+  box-shadow: 0 1px 7px #0001;
+  padding: 1.1em 1em;
+  font-size: 0.97em;
+}
+
+.suggestions-box ul {
+  margin: 0.7em 0 0 0;
+  padding-left: 1.2em;
+}
+
+.suggestions-box code {
+  background: #f4f4fa;
+  padding: 0.18em 0.4em;
+  border-radius: 4px;
+  font-size: 1.06em;
+  font-family: 'Fira Mono', Menlo, Consolas, monospace;
+}
+
+.suggestions-box button {
+  margin-left: 0.7em;
+  padding: 0.22em 0.9em;
+  background: #59c47e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.18s;
+}
+
+.suggestions-box button:hover {
+  background: #379a59;
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    max-width: 97vw;
+    padding: 1.2em 1vw;
+    font-size: 1em;
+  }
+}
